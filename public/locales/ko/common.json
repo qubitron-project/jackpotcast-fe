@@ -1,0 +1,12 @@
+{
+    "h1": "한글입니다",
+    "change-locale": "Change locale",
+    "to-second-page": "To second page",
+    "error-with-status": "A  error occurred on server",
+    "error-without-status": "An error occurred on the server",
+    "title": "",
+    "search_title": "{{q}}의 검색결과",
+    "show_more": "더 보기",
+    "search": "검색",
+    "language": "언어"
+}

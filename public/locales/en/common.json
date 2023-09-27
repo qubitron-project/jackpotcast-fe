@@ -1,0 +1,12 @@
+{
+    "h1": "A simple example",
+    "change-locale": "Change locale",
+    "to-second-page": "To second page",
+    "error-with-status": "A  error occurred on server",
+    "error-without-status": "An error occurred on the server",
+    "title": "Chart",
+    "search_title": "Search result for {{q}}",
+    "show_more": "Show more",
+    "search": "Search",
+    "language": "Language"
+}
