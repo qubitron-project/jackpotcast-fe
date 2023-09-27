@@ -241,23 +241,22 @@ const Home: NextPage<HomeProps> = () => {
                 justifyContent='center'
               >
                 <Image
-                  src={formatImgURL(bannerMid?.results[0].image_url)}
-                  sizes={formatImgURL(bannerMid?.results[0].image_url)}
-                  width={200}
-                  height={200}
-                  alt={'titleConverted'}
-                />
-
-                <Image
-                  src={formatImgURL(bannerMid?.results[0].image_url)}
-                  sizes={formatImgURL(bannerMid?.results[0].image_url)}
+                  src={formatImgURL('/assets/button1.png')}
+                  sizes={formatImgURL('/assets/button1.png')}
                   width={200}
                   height={200}
                   alt={'titleConverted'}
                 />
                 <Image
-                  src={formatImgURL(bannerMid?.results[0].image_url)}
-                  sizes={formatImgURL(bannerMid?.results[0].image_url)}
+                  src={formatImgURL('/assets/button2.png')}
+                  sizes={formatImgURL('/assets/button2.png')}
+                  width={200}
+                  height={200}
+                  alt={'titleConverted'}
+                />
+                <Image
+                  src={formatImgURL('/assets/button3.png')}
+                  sizes={formatImgURL('/assets/button3.png')}
                   width={200}
                   height={200}
                   alt={'titleConverted'}
