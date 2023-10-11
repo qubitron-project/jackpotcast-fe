@@ -12,7 +12,6 @@ import Link from 'next/link';
 import { useSeries } from '../hooks/series.hooks';
 import { usePeople } from '../hooks/people.hooks';
 import TileSlider from '../components/TileSider/TileSlider';
-import TvTileSlider from '../components/TvTileSlider/TvTileSlider';
 import CustomHead from '../components/CustomHead/CustomHead';
 import PersonTileSlider from '../components/PersonTileSlider/PersonTileSlider';
 import MainSlider from '../components/MainSlider/MainSlider';

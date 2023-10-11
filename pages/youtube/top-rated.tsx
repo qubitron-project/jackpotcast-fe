@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import LoadingButton from "@mui/lab/LoadingButton";
-import { Box, Typography, Grid } from "@mui/material";
+import React, { useState } from 'react';
+import LoadingButton from '@mui/lab/LoadingButton';
+import { Box, Typography, Grid } from '@mui/material';
 
-import { styles as classes } from "../../styles/styles";
-import Poster from "../../components/Poster/Poster";
-import Loader from "../../components/Loader/Loader";
-import { useTopMovies } from "../../hooks/movies.hooks";
-import { useTopYoutubes } from "../../hooks/youtubes.hooks";
-import CustomHead from "../../components/CustomHead/CustomHead";
-import { IConutry } from "../../utils/filterUtils";
-import Filter from "../../components/Filter/Filter";
+import { styles as classes } from '../../styles/styles';
+import Poster from '../../components/Poster/Poster';
+import Loader from '../../components/Loader/Loader';
+import { useTopMovies } from '../../hooks/movies.hooks';
+import { useTopYoutubes } from '../../hooks/youtubes.hooks';
+import CustomHead from '../../components/CustomHead/CustomHead';
+import { IConutry } from '../../utils/filterUtils';
+import Filter from '../../components/Filter/Filter';
 
 function TopRated() {
   const [country, setCountry] = useState<IConutry | undefined>();
-  const [releaseYear, setReleaseYear] = useState<number | "">("");
+  const [releaseYear, setReleaseYear] = useState<number | ''>('');
 
   const {
     data: topYoutubes,
@@ -28,9 +28,9 @@ function TopRated() {
 
   return (
     <>
-      <CustomHead title="Top rated Youtube to watch." media_type={"youtube"} />
+      <CustomHead title='Top rated Youtube to watch.' media_type={'movie'} />
       <Box sx={classes.pageContainer}>
-        <Typography variant="h4" sx={classes.headTxt}>
+        <Typography variant='h4' sx={classes.headTxt}>
           Top rated Youtubes
         </Typography>
 
@@ -45,7 +45,7 @@ function TopRated() {
           <Loader />
         ) : (
           <>
-            <Grid container sx={classes.moviesContainer}>
+            {/* <Grid container sx={classes.moviesContainer}>
               {topYoutubes?.pages.map((page) =>
                 page.results.map((youtube) => (
                   <Grid item key={youtube.id}>
@@ -53,16 +53,16 @@ function TopRated() {
                   </Grid>
                 ))
               )}
-            </Grid>
+            </Grid> */}
             {hasNextPage && (
-              <Grid container justifyContent="center">
+              <Grid container justifyContent='center'>
                 <LoadingButton
                   onClick={() => fetchNextPage()}
                   loading={isFetching || isLoading}
-                  loadingIndicator="Loading…"
-                  color="secondary"
-                  variant="contained"
-                  size="large"
+                  loadingIndicator='Loading…'
+                  color='secondary'
+                  variant='contained'
+                  size='large'
                   sx={classes.loadBtn}
                 >
                   더보기

@@ -8,7 +8,6 @@ import { styles as classes } from '../../styles/styles';
 import Loader from '../../components/Loader/Loader';
 import CustomHead from '../../components/CustomHead/CustomHead';
 import Poster from '../../components/Poster/Poster';
-import TvPoster from '../../components/TvPoster/TvPoster';
 import { WatchlistMediaType } from '../../types/watchlist.apiResponses';
 import {
   MovieResult,

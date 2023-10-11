@@ -49,15 +49,6 @@ function Recent() {
           <Loader />
         ) : (
           <>
-            <Grid container sx={classes.moviesContainer}>
-              {recentYoutubes?.pages.map((page) =>
-                page.results.map((movie) => (
-                  <Grid item key={movie.id}>
-                    <Poster singleYoutubeData={movie} />
-                  </Grid>
-                ))
-              )}
-            </Grid>
             {hasNextPage && (
               <Grid container justifyContent='center'>
                 <LoadingButton

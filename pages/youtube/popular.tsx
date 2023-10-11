@@ -50,15 +50,6 @@ function Popular() {
           <Loader />
         ) : (
           <>
-            <Grid container sx={classes.moviesContainer}>
-              {popularYoutubes?.pages.map((page) =>
-                page.results.map((youtube) => (
-                  <Grid item key={youtube.id}>
-                    <Poster singleYoutubeData={youtube} />
-                  </Grid>
-                ))
-              )}
-            </Grid>
             {hasNextPage && (
               <Grid container justifyContent='center'>
                 <LoadingButton
