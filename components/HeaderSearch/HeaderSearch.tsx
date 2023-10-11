@@ -37,7 +37,7 @@ const HeaderSearch = () => {
   };
 
   const handleSearchValue = useCallback(
-    (e) => {
+    (e: any) => {
       setSearch(e.target.value);
     },
     [search]
