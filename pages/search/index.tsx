@@ -10,8 +10,6 @@ import { getSearchQuery } from '../../apis/search.api';
 import Poster from '../../components/Poster/Poster';
 import { styles as classes } from '../../styles/styles';
 import { MediaType } from '../../types/apiResponses';
-import PersonPoster from '../../components/PersonPoster/PersonPoster';
-import TvPoster from '../../components/TvPoster/TvPoster';
 import { useTranslation } from 'next-i18next';
 import { GetServerSideProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
