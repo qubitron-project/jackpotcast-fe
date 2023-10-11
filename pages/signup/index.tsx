@@ -75,7 +75,7 @@ const Signup = () => {
       withCredentials: true,
     });
     setSubsList(
-      data.map((sub) => ({
+      data.map((sub: any) => ({
         id: sub.id,
         title: sub.snippet.title,
         description: sub.snippet.description,
@@ -100,7 +100,7 @@ const Signup = () => {
         name: values.name,
         email: values.email,
         password: values.password,
-        propic: avatarPic,
+        image: avatarPic,
       });
 
       let result;
@@ -168,7 +168,7 @@ const Signup = () => {
 
   return (
     <Container sx={classes.subscriptions}>
-      <CustomHead title='Sign up with Jackpotcast' media_type={'movie'} />
+      <CustomHead title='Sign up with Wantu-Chart' media_type={'movie'} />
       <Fade in={true}>
         <Grid container sx={classes.subscriptionsInner}>
           <Grid item justifyContent='center' display='flex'>
