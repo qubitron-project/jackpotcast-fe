@@ -168,7 +168,7 @@ const Signup = () => {
 
   return (
     <Container sx={classes.subscriptions}>
-      <CustomHead title='Sign up with Jackpotcast-Chart' media_type={'movie'} />
+      <CustomHead title='Sign up with Jackpotcast' media_type={'movie'} />
       <Fade in={true}>
         <Grid container sx={classes.subscriptionsInner}>
           <Grid item justifyContent='center' display='flex'>

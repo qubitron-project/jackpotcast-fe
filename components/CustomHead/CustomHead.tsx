@@ -14,9 +14,7 @@ const CustomHead = ({ title, media_type }: CustomHeadProps) => {
     '잭팟캐스트는 유튜브에서 인기있는 시리즈 콘텐츠를 모아 평가하고 추천 해주는 서비스입니다.';
   return (
     <Head>
-      <title>{`${title} ${
-        media_type == 'movie' ? '| Movies' : '| Tv Shows'
-      } - Jackpotcast-Chart`}</title>
+      <title>{`${title}`}</title>
       <link rel='icon' href='/favicon-32x32.png' />
       <meta
         name='title'

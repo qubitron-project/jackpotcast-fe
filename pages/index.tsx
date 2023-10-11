@@ -187,7 +187,7 @@ const Home: NextPage<HomeProps> = () => {
 
   return (
     <>
-      <CustomHead title='Jackpotcast-Chart - Home' media_type={'movie'} />
+      <CustomHead title='Jackpotcast - Home' media_type={'movie'} />
 
       <div className={styles.container}>
         {(isMovieLoading1 || isMovieLoading2) && <LinearProgress />}

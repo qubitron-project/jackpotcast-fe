@@ -22,6 +22,10 @@ const AboutPage: React.FC = () => {
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <>
@@ -49,20 +53,24 @@ const AboutPage: React.FC = () => {
         </Box>
         <TabPanel value='1'>
           <Box sx={classes.playerWrapper}>
-            <ReactPlayer
-              style={{
-                objectFit: 'cover',
-                objectPosition: 'top',
-                height: '50vh',
-              }}
-              url={`https://www.youtube.com/watch?v=r6QE8hYhUhA`}
-              muted
-              playing={true}
-              loop={true}
-              controls={false}
-              width='100%'
-              height='100%'
-            />
+            {isClient ? (
+              <ReactPlayer
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: 'top',
+                  height: '50vh',
+                }}
+                url={`https://www.youtube.com/watch?v=r6QE8hYhUhA`}
+                muted
+                playing={true}
+                loop={true}
+                controls={false}
+                width='100%'
+                height='100%'
+              />
+            ) : (
+              'not loaded'
+            )}
           </Box>
 
           <Typography variant='h5'>잭팟캐스트는요….</Typography>

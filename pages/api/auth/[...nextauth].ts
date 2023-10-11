@@ -28,64 +28,20 @@ const nextAuthOptions: NextAuthOptionsCallback = (req, res) => {
           },
         },
       }),
-
-      // CredentialsProvider({
-      //   name: "Credentials",
-      //   credentials: {
-      //     email: {
-      //       label: "Email",
-      //       type: "email",
-      //       placeholder: "jsmith@mail.com",
-      //     },
-      //     password: { label: "Password", type: "password" },
-      //   },
-      //   async authorize(credentials, req) {
-      //     try {
-      //       const res = await fetch(
-      //         `${process.env.NEXT_PUBLIC_BE_ROUTE}/auth/signin`,
-      //         {
-      //           method: "POST",
-      //           headers: { "Content-Type": "application/json" },
-      //           body: JSON.stringify({
-      //             email: credentials?.email,
-      //             password: credentials?.password,
-      //           }),
-      //         }
-      //       );
-
-      //       const user = await res.json();
-
-      //       if (res.ok && user) {
-      //         return user;
-      //       } else if (user.error) {
-      //         throw new Error(user.error);
-      //       } else {
-      //         throw new Error("Login failed.");
-      //       }
-      //     } catch (error: any) {
-      //       throw new Error(error.message);
-      //     }
-      //   },
-      // }),
     ],
     callbacks: {
       async signIn({ profile, account, email, credentials }) {
         setCookie('key', 'value');
-        console.log(
-          'profile=>',
-          profile,
-          profile?.picture,
-          account?.access_token
-        );
+        const profileContent = profile as any;
 
         try {
           console.log('Login through our DB');
           await fetch(`${USERS_LIST}/signup`, {
             method: 'POST',
             body: JSON.stringify({
-              name: profile?.name,
-              email: profile?.email,
-              image: profile?.picture,
+              name: profileContent?.name,
+              email: profileContent?.email,
+              image: profileContent?.picture,
               google_token: account?.access_token,
             }),
           })
