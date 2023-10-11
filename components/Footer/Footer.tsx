@@ -118,7 +118,7 @@ const Footer = () => {
             <Grid item sx={classes.footerCol}>
               <Link href={'/service'} shallow>
                 <Typography variant='h6' sx={classes.footerColHead}>
-                  서비스이용약관
+                  이용약관
                 </Typography>
               </Link>
             </Grid>

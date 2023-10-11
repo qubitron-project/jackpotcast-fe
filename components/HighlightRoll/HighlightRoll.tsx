@@ -16,19 +16,19 @@ type HighlightRollProps = {
 
 const EpisodeRoll = ({ episodeList }: HighlightRollProps) => {
   if (!episodeList?.length) return null;
-  episodeList = episodeList.sort(() => Math.random() - 0.5);
+  // episodeList = episodeList.sort(() => Math.random() - 0.5);
 
   const settings = {
     arrows: true,
     dots: false,
     infinite: true,
-    lazyLoad: 'anticipated',
+    layzload: 'anticipated',
     speed: 1500,
     slidesToShow: 3,
     slidesToScroll: 3,
     // slidesToShow: 2,
     autoplay: false,
-    autoplaySpeed: 5000,
+    // autoplaySpeed: 5000,
     // variableWidth: true,
     initialSlide: 0,
     responsive: [
@@ -69,7 +69,7 @@ const EpisodeRoll = ({ episodeList }: HighlightRollProps) => {
           episode.highlights && (
             <Box key={idx} sx={classes.clipItem}>
               <YoutubePlayer
-                isLight={false}
+                isLight={true}
                 width={'100%'}
                 height={'100%'}
                 link={episode.link}
