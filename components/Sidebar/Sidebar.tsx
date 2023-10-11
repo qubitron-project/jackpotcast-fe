@@ -46,7 +46,7 @@ const Sidebar = ({ sidebarOpen, handleCloseNavMenu }: SidebarProps) => {
       <Divider />
       <List>
         {/* mobile btn links */}
-        {appRoutes.map(({ title, icon, path, childRoutes }) => (
+        {appRoutes.map(({ title, path, childRoutes }) => (
           <ListItem
             key={title}
             disablePadding
@@ -61,14 +61,13 @@ const Sidebar = ({ sidebarOpen, handleCloseNavMenu }: SidebarProps) => {
             sx={{ display: 'block' }}
           >
             <ListItemButton selected={router.asPath === path}>
-              <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={title} />
               {!path && (isDropped == title ? <ExpandLess /> : <ExpandMore />)}
             </ListItemButton>
 
             <Collapse in={isDropped == title} timeout='auto' unmountOnExit>
               {childRoutes &&
-                childRoutes.map(({ childTitle, childPath, childIcon }) => (
+                childRoutes.map(({ childTitle, childPath }) => (
                   <List component='div' disablePadding key={childPath}>
                     <ListItemButton
                       sx={{ pl: 4 }}
@@ -78,7 +77,6 @@ const Sidebar = ({ sidebarOpen, handleCloseNavMenu }: SidebarProps) => {
                       }}
                       selected={router.asPath === childPath}
                     >
-                      <ListItemIcon>{childIcon}</ListItemIcon>
                       <ListItemText primary={childTitle} />
                     </ListItemButton>
                   </List>
