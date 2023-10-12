@@ -1,7 +1,7 @@
 export const styles = {
   playerWrapper: {
-    width: '80%',
-    aspectRatio: '16/9',
+    width: '100%',
+    aspectRatio: '14/3',
     overflow: 'hidden',
     '@media (max-width: 600px)': {
       width: '100%',
