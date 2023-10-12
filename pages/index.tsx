@@ -193,10 +193,14 @@ const Home: NextPage<HomeProps> = () => {
         <Box>
           <MainBannerSlider bannerData={bannerMain?.results} />
         </Box>
-        <TitleSection
-          title={t('home:popular_youtube_series')}
-          youtubeData={movies1?.results}
-        />
+        {!isMovieError1 ? (
+          <TitleSection
+            title={t('home:popular_youtube_series')}
+            youtubeData={movies1?.results}
+          />
+        ) : (
+          <Typography>{'데이터를 가져올수 없습니다.'}</Typography>
+        )}
         <Box>
           <Grid
             container
@@ -264,10 +268,14 @@ const Home: NextPage<HomeProps> = () => {
             </Box>
           </Grid>
         </Box>
-        <TitleSection
-          title={t('home:latest_youtube_series')}
-          youtubeData={movies2?.results}
-        />
+        {!isMovieError2 ? (
+          <TitleSection
+            title={t('home:latest_youtube_series')}
+            youtubeData={movies2?.results}
+          />
+        ) : (
+          <Typography>{'데이터를 가져올수 없습니다.'}</Typography>
+        )}
         <Box sx={{ ...classes.sliderContainer, m: '20px 0 60px 0' }}>
           <Box sx={{ textAlign: 'start' }}>
             <Typography variant='h4' sx={classes.headTxt}>
