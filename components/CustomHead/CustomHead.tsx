@@ -10,27 +10,23 @@ type CustomHeadProps = {
 const CustomHead = ({ title, media_type }: CustomHeadProps) => {
   const { t } = useTranslation(['header', 'common']);
 
-  const overview =
-    '잭팟캐스트는 유튜브에서 인기있는 시리즈 콘텐츠를 모아 평가하고 추천 해주는 서비스입니다.';
+  const overview = '잭팟캐스트 당신의 유튜버를 캐스팅 하세요.';
   return (
     <Head>
       <title>{`${title}`}</title>
       <link rel='icon' href='/favicon-32x32.png' />
       <meta
         name='title'
-        content={'잭팟캐스트 - 유튜브 시리즈 콘텐츠 추천 평가 서비스'}
+        content={'잭팟캐스트 - 당신의 유튜버를 캐스팅 하세요 '}
       />
       <meta name='description' content={overview} />
-      <meta
-        name='keywords'
-        content='youtube, Review, User Ratings, 유튜브, 대형콘텐츠, 콘텐츠, series, 시리즈'
-      />
+      <meta name='keywords' content='youtube,jackpotcast' />
 
       <meta property='og:type' content='website' />
-      <meta property='og:site_name' content='Wantu-Chart' />
+      <meta property='og:site_name' content='잭팟캐스트' />
       <meta
         property='og:title'
-        content={'잭팟캐스트 - 유튜브 시리즈 콘텐츠 추천 평가 서비스'}
+        content={'잭팟캐스트 - 당신의 유튜버를 캐스팅 하세요'}
       />
       <meta property='og:description' content={overview} />
     </Head>
