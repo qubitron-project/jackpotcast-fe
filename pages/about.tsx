@@ -9,6 +9,9 @@ import TabPanel from '@mui/lab/TabPanel';
 import { Box, Button, Grid, LinearProgress, Typography } from '@mui/material';
 import ReactPlayer from 'react-player';
 import { styles as classes } from '../components/MainSlider/mainSlider.styles';
+import { NOTICES_LIST } from './api/config';
+import NoticeList from '../components/NoticeList/NoticeList';
+import useSWR from 'swr';
 
 export const getStaticProps = async ({ locale }: any) => ({
   props: {
@@ -26,6 +29,11 @@ const AboutPage: React.FC = () => {
   useEffect(() => {
     setIsClient(true);
   }, []);
+  const {
+    data: notices,
+    isLoading: isNoticeLoading,
+    error: isNoticeError,
+  } = useSWR(`${NOTICES_LIST}`);
 
   return (
     <>
@@ -97,6 +105,7 @@ const AboutPage: React.FC = () => {
             서포터 모두에게 향상된 수익을 창출하도록 돕는 OPEN MCN 매칭
             플랫폼입니다.
           </Typography>
+          <NoticeList noticeData={notices?.results} />
         </TabPanel>
         <TabPanel value='2'>투자하기 입니다....</TabPanel>
         <TabPanel value='3'>크리에이터 가입하기 입니다....</TabPanel>
