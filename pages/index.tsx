@@ -232,7 +232,13 @@ const Home: NextPage<HomeProps> = () => {
           </Grid>
         </Box>
         <Box>
-          <Grid container sx={{ flexDirection: { xs: 'column', md: 'row' } }}>
+          <Grid
+            container
+            sx={{
+              flexDirection: { xs: 'column', md: 'row' },
+              marginTop: '30px',
+            }}
+          >
             <MidBannerSlider bannerData={bannerMid?.results} />
             <Box display='flex' justifyContent='center' alignItems='center'>
               <Grid

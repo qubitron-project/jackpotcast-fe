@@ -91,12 +91,12 @@ const MainBannerSlider = ({ bannerData }: MainBannerSliderProps) => {
                                 objectPosition: 'top',
                               }}
                               src={
-                                width > 400
+                                width > 600
                                   ? formatImgURL(image_url)
                                   : formatImgURL(m_image_url)
                               }
                               sizes={
-                                width > 400
+                                width > 600
                                   ? formatImgURL(image_url)
                                   : formatImgURL(m_image_url)
                               }

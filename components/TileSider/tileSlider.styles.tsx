@@ -2,8 +2,9 @@ export const styles = {
   poster: {
     maxWidth: '150px',
     width: '100%',
-    '@media (max-width: 400px)': {
-      width: '400px',
+    '@media (max-width: 500px)': {
+      width: '500px',
+      aspectRatio: '16/9',
     },
   },
   headTxt: {

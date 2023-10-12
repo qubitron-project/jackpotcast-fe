@@ -16,7 +16,7 @@ export const styles = {
       margin: '10px 3px',
       maxWidth: '320px',
     },
-    '@media (max-width: 400px)': {
+    '@media (max-width: 600px)': {
       width: '100%',
     },
   },
@@ -27,7 +27,7 @@ export const styles = {
     '@media (max-width: 900px)': {
       width: '250px',
     },
-    '@media (max-width: 400px)': {
+    '@media (max-width: 600px)': {
       width: '100%',
     },
   },

@@ -2,9 +2,9 @@ export const styles = {
   playerWrapper: {
     width: '50%',
     aspectRatio: '4/3',
-    '@media (max-width: 400px)': {
+    '@media (max-width: 600px)': {
       width: '100%',
-      height: '400px',
+      aspectRatio: '16/9',
     },
 
     overflow: 'hidden',
@@ -12,7 +12,7 @@ export const styles = {
   mediaSlide: {
     width: '50%',
     marginBottom: '10px',
-    '@media (max-width: 400px)': {
+    '@media (max-width: 600px)': {
       width: '100%',
       aspectRatio: '16/9',
     },
@@ -43,7 +43,7 @@ export const styles = {
       height: '400px',
     },
     '& img': {
-      height: '500p',
+      height: '500px',
       margin: '0 auto',
       marginBottom: '25px',
       boxShadow: '0 5px 15px rgba(0, 0, 0, 0.25)',

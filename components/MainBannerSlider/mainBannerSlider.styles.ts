@@ -1,11 +1,11 @@
 export const styles = {
   playerWrapper: {
     width: '80%',
-    height: '300px',
+    aspectRatio: '16/9',
     overflow: 'hidden',
-    '@media (max-width: 400px)': {
+    '@media (max-width: 600px)': {
       width: '100%',
-      height: '400px',
+      aspectRatio: '16/9',
     },
   },
   mediaSlide: {
@@ -15,16 +15,14 @@ export const styles = {
     position: 'relative',
     outline: 'none',
     margin: '0 10px',
-    height: '400px',
     '@media (max-width: 768px)': {
       margin: '0 3px',
-      height: '400px',
+      aspectRatio: '16/9',
     },
   },
   mediaItemImg: {
     position: 'relative',
     width: '100%',
-    height: '300px',
     '@media (max-width: 1400px)': {
       height: '300px',
     },
@@ -38,7 +36,7 @@ export const styles = {
       height: '400px',
     },
     '& img': {
-      height: '300px',
+      aspectRatio: '16/9',
       margin: '0 auto',
       marginBottom: '25px',
       boxShadow: '0 5px 15px rgba(0, 0, 0, 0.25)',
