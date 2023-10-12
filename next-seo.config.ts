@@ -4,20 +4,20 @@ const config: DefaultSeoProps = {
   openGraph: {
     type: 'website',
     locale: 'ko_KR',
-    url: 'https://chart.wantu.io/',
-    title: 'Wantu Chart',
-    siteName: 'Wantu',
+    url: 'https://Jackpotcast.com',
+    title: 'Jackpotcast',
+    siteName: 'Jackpotcast',
     images: [
       {
-        url: 'https://chart.wantu.io/assets/wantu_logo.png',
+        url: 'http://jackpotcast.com/assets/logo.png',
         width: 285,
         height: 167,
-        alt: 'Wantu Chart',
+        alt: 'Jackpotcast',
       },
     ],
   },
   twitter: {
-    handle: '@wantu',
+    handle: '@jackpotcast',
     site: '@site',
     cardType: 'summary_large_image',
   },
