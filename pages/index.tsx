@@ -315,20 +315,16 @@ export default Home;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { locale } = context;
-  const [movies1, movies2, movies5, channelList] = await Promise.all([
-    fetcher(`${GET_MOVIES_LIST}country=한국`),
-    fetcher(`${GET_MOVIES_LIST}genre1=웹예능`),
-    fetcher(`${GET_MOVIES_LIST}rating=0`),
-    fetcher(`${GET_CHANNEL_LIST}`),
+  const [movies1, movies2] = await Promise.all([
+    fetcher(`${GET_MOVIES_LIST}genre1=hot`),
+    fetcher(`${GET_MOVIES_LIST}genre1=new`),
   ]);
 
   return {
     props: {
       fallback: {
-        [`${GET_MOVIES_LIST}country=한국`]: movies1,
-        [`${GET_MOVIES_LIST}genre1=웹예능`]: movies2,
-        [`${GET_MOVIES_LIST}rating=0`]: movies5,
-        [`${GET_CHANNEL_LIST}`]: channelList,
+        [`${GET_MOVIES_LIST}genre1=hot`]: movies1,
+        [`${GET_MOVIES_LIST}genre1=new`]: movies2,
       },
       ...(await serverSideTranslations(locale ?? 'en')),
     },
