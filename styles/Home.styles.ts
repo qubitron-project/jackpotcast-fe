@@ -1,7 +1,7 @@
 export const styles = {
   sliderContainer: {
-    m: '60px 0',
-    padding: '0 24px',
+    marginLeft: '10%',
+    marginRight: '10%',
     '@media (max-width: 900px)': {
       m: '35px 0',
       padding: '0 10px',
@@ -9,8 +9,9 @@ export const styles = {
   },
   headTxt: {
     fontWeight: 'bold',
+    fontSize: '2rem',
     '@media (max-width: 900px)': {
-      fontSize: '18px',
+      fontSize: '2rem',
     },
   },
   subTxt: {

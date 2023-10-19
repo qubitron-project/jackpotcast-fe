@@ -1,6 +1,5 @@
 export const styles = {
   poster: {
-    maxWidth: '150px',
     width: '100%',
     '@media (max-width: 500px)': {
       width: '500px',

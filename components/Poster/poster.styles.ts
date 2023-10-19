@@ -2,33 +2,33 @@ export const styles = {
   poster: {
     position: 'relative',
     color: 'secondary.main',
-    minWidth: '320px',
-    width: '100%',
+    width: '20vw',
     aspectRatio: '16/9',
-    margin: '10px',
+
     '& .poster-img': {
       borderRadius: '8px',
     },
     '&:hover': {
       color: '#fff',
     },
-    '@media (max-width: 900px)': {
-      margin: '10px 3px',
-      maxWidth: '320px',
+    '@media (max-width: 1920px)': {
+      width: '10vw',
     },
-    '@media (max-width: 600px)': {
-      width: '100%',
-    },
+    '@media (max-width: 900px)': {},
+    '@media (max-width: 600px)': {},
   },
   posterUp: {
     position: 'relative',
-    width: '320px',
+    width: '18vw',
     aspectRatio: '16/9',
+    '@media (max-width: 1920px)': {
+      width: '18vw',
+    },
     '@media (max-width: 900px)': {
-      width: '250px',
+      width: '45vw',
     },
     '@media (max-width: 600px)': {
-      width: '100%',
+      width: '90vw',
     },
   },
   posterDown: {
@@ -43,7 +43,7 @@ export const styles = {
     textOverflow: 'ellipsis',
     fontWeight: '600',
     '@media (max-width: 900px)': {
-      fontSize: '11px',
+      fontSize: '2.2rem',
     },
   },
   posterYearMain: {

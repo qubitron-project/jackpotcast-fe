@@ -18,26 +18,11 @@ export const styles = {
   mediaItem: {
     position: 'relative',
     outline: 'none',
-    margin: '0 10px',
-    '@media (max-width: 768px)': {
-      margin: '0 3px',
-    },
   },
   mediaItemImg: {
     position: 'relative',
-    height: '500px',
-    '@media (max-width: 1400px)': {
-      height: '450px',
-    },
-    '@media (max-width: 1300px)': {
-      height: '450px',
-    },
-    '@media (max-width: 768px)': {
-      height: '350px',
-    },
-    '@media (max-width: 576px)': {
-      height: '220px',
-    },
+    width: '100vw',
+    aspectRatio: '14/3',
     '& img': {
       maxWidth: '100%',
       margin: '0 auto',

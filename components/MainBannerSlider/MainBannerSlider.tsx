@@ -45,7 +45,7 @@ const MainBannerSlider = ({ bannerData }: MainBannerSliderProps) => {
   const config = {
     arrows: false,
     dots: false,
-    centerMode: true,
+    centerMode: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -53,7 +53,6 @@ const MainBannerSlider = ({ bannerData }: MainBannerSliderProps) => {
     speed: 500,
     autoplaySpeed: 10000,
     cssEase: 'ease',
-    centerPadding: isMobile ? '0px' : '50px',
   };
 
   return (

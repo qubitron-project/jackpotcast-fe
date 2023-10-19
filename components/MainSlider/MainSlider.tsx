@@ -39,7 +39,6 @@ const MainSlider = ({ youtubeData }: MainSliderProps) => {
     speed: 500,
     autoplaySpeed: 10000,
     cssEase: 'ease',
-    centerPadding: isMobile ? '20px' : '50px',
   };
 
   return (

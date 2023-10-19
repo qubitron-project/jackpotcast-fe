@@ -1,6 +1,6 @@
 export const styles = {
   playerWrapper: {
-    width: '100%',
+    width: '100vw',
     aspectRatio: '14/3',
     overflow: 'hidden',
     '@media (max-width: 600px)': {
@@ -13,16 +13,17 @@ export const styles = {
   },
   mediaItem: {
     position: 'relative',
+    width: '100vw',
+    aspectRatio: '14/3',
     outline: 'none',
-    margin: '0 10px',
     '@media (max-width: 768px)': {
-      margin: '0 3px',
       aspectRatio: '16/9',
     },
   },
   mediaItemImg: {
     position: 'relative',
-    width: '100%',
+    width: '100vw',
+    aspectRatio: '14/3',
     '@media (max-width: 1400px)': {
       height: '300px',
     },
@@ -36,7 +37,7 @@ export const styles = {
       height: '400px',
     },
     '& img': {
-      aspectRatio: '16/9',
+      aspectRatio: '14/3',
       margin: '0 auto',
       marginBottom: '25px',
       boxShadow: '0 5px 15px rgba(0, 0, 0, 0.25)',
