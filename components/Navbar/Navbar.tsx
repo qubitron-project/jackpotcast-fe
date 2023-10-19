@@ -53,21 +53,21 @@ export const appRoutes = [
       },
       {
         childTitle: '투자자 이용안내',
-        childPath: '/about/investor',
+        childPath: '/',
       },
       {
         childTitle: '크리에이터 이용안내',
-        childPath: '/about/creator',
+        childPath: '/',
       },
     ],
   },
   {
     title: 'Casting',
-    path: '/creators',
+    path: '/',
   },
   {
     title: 'Community',
-    path: '/community',
+    path: '/',
   },
 ];
 
