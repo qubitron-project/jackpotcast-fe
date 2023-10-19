@@ -3,7 +3,9 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/youtube/[id]/[name]": "pages/youtube/[id]/[name].js",
   "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
-  "/[...nextmd]": "pages/[...nextmd].js"
+  "/[...nextmd]": "pages/[...nextmd].js",
+  "/about": "pages/about.js",
+  "/404": "pages/404.js",
+  "/youtube/[id]/[name]": "pages/youtube/[id]/[name].js"
 }

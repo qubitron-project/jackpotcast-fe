@@ -130,7 +130,7 @@ const Footer = () => {
               </Link>
             </Grid>
             <Grid item sx={classes.footerCol}>
-              <Link href={'/404'} shallow>
+              <Link href={'/'} shallow>
                 <Typography variant='h6' sx={classes.footerColHead}>
                   광고 신청하기
                 </Typography>
